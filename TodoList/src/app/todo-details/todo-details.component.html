@@ -1,0 +1,33 @@
+<div id="detailBtns">
+  <button (click)="removeTodo(todo.key)" class="btn btn-danger">Remove</button>
+    <input id="updateI" (keyup.enter)="updateTodo(todo.key, todo.updateText)" (keyup.enter)="todo.update = !todo.update" type="text" [(ngModel)]="todo.updateText">
+      <button id="updateBtn" class="btn btn-primary" (click)="updateTodo(todo.key, todo.updateText)" (click)="todo.update = !todo.update">Update
+       </button>
+</div>       
+
+<div id="detailedList" class="card border-0 col-sm-7" style="width: 30rem;">
+  <div class="card-body">
+    <img class="card-img" src="./assets/post-it.png">
+    <h1 id="todo-detailsCardText1" class="card-img-overlay"><span>Task:</span> {{ todo.task }}</h1>
+    <h2 id="todo-detailsCardText2" class="card-img-overlay"><span>Completed:</span> {{ todo.completed }}<br>
+      <a routerLink="/todos"><button id="todosBtn" type="button" class="btn btn-warning">Todos List</button></a>
+    </h2>
+    <!-- <h2><span>User:</span> {{ todo.user }}</h2> -->
+  </div>
+</div>
+
+<!-- <div class="card border-0 col-sm-7" style="width: 30rem;">
+  <div class="card-body">
+    <img class="card-img" src="./assets/post-it.png">
+    <h3 id="todoCardText" class="card-title card-img-overlay">
+      <button id="checkBox" class="btn" (click)="todoCompleted(thing.key, !thing.completed)">
+        <i *ngIf="!thing.completed" class="fa fa-times" aria-hidden="true"></i>
+        <i *ngIf="thing.completed" class="check fa fa-check" aria-hidden="true"></i>
+      </button>
+        {{ thing.task }}<br>
+      <button id="editAndRemoveBtn" class="btn btn-danger" routerLink="details/{{ thing.key }}">Edit/Remove</button>
+      <a routerLink="details/{{ thing.key }}">Edit/Remove</a>
+    </h3>
+  
+  </div>
+</div> -->

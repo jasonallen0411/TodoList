@@ -1,0 +1,45 @@
+#detailBtns{
+    margin: 40px auto;
+    text-align: center;
+}
+
+#detailedList{
+    text-align:center;
+    color: rgb(34, 6, 155);
+    font-weight: bold;
+    margin-top: -40px;
+}
+
+#todo-detailsCardText1{
+    text-align: center;
+    margin-top: 100px;
+}
+
+#todo-detailsCardText2{
+    text-align: center;
+    margin-top: 150px;
+}
+
+.card{
+    margin: 0px auto;
+    text-align: center;
+    background-color: rgba(199, 151, 88, 0);
+    margin-top: 20px;
+
+}
+
+#updateBtn{
+    margin-left: 10px;
+}
+
+#updateI{
+    margin-left: 10px;
+}
+
+#todosBtn{
+    margin-top: 20px;
+}
+
+span{
+    color: rgb(190, 13, 0); 
+}

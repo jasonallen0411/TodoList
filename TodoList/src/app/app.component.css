@@ -1,0 +1,29 @@
+nav{
+    background-image: url("https://cdn.pixabay.com/photo/2013/01/19/15/58/boards-75462_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    margin-top: -2px;
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+.navbar-brand {
+    font-family: 'chalkduster';
+    font-size: 30px;
+    color: white;
+}
+
+.nav-link {
+    color: white;
+    font-size: 20px;
+}
+
+.nav-link:hover{
+    color: white;
+    font-size: 20px;
+    opacity: .5
+}
+

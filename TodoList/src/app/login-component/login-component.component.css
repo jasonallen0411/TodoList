@@ -1,0 +1,31 @@
+#welcomeEmail{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#emailLabel{
+    font-size: 30px;
+    color: rgb(255, 255, 255); 
+    font-family: "chalkduster";
+}
+
+#passwordLabel{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-family: "chalkduster";
+}
+
+.container{
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+
+form{
+    text-align: center;
+    margin: 0px auto;
+}
+
+#todosBtn{
+    margin-left: 10px;
+}

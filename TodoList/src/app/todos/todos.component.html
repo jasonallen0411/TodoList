@@ -1,0 +1,48 @@
+<body>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <div class="container">
+        <div class="row">
+          <h2 id="title" class="col-12">Todo List!</h2>
+          <div class="wrap">
+
+            <input id="todoInput" (keyup.enter)="addTodo(todoText.value)" type="text" #todoText>
+            <button id="addTodoBtn" (click)="addTodo(todoText.value)" class="btn btn-warning">Add Todo</button>
+          </div>
+          <ul class="container">
+            <li class="col" *ngFor="let thing of todoItems | async">
+
+              <div class="card border-0 col-sm-7" style="width: 30rem;">
+                  <div class="card-body">
+                    <img class="card-img" src="./assets/post-it.png">
+                    <h3 id="todoCardText" class="card-title card-img-overlay">
+                      <button id="checkBox" class="btn" (click)="todoCompleted(thing.key, !thing.completed)">
+                        <i *ngIf="!thing.completed" class="fa fa-times" aria-hidden="true"></i>
+                        <i *ngIf="thing.completed" class="check fa fa-check" aria-hidden="true"></i>
+                      </button>
+                        {{ thing.task }}<br>
+                      <button id="editAndRemoveBtn" class="btn btn-danger" routerLink="details/{{ thing.key }}">Edit/Remove</button>
+                      <!-- <a routerLink="details/{{ thing.key }}">Edit/Remove</a> -->
+                    </h3>
+                  
+                  </div>
+              </div>
+
+              <!-- <div id="card" class="text-white">
+                  <img id="tablet" class="card-img" src="./assets/post-it.png">
+                  <div class="card-img-overlay">
+                    <h2 class="card-title">Ancient Todo<br> List</h2>
+                    <p class="card-text">Welcome to the Ancient Todo List!<br> Login or Register, or if you are signed<br> in, click Todo List to view your todos!</p>
+                    <a routerLink="login"><button id="loginBtn" type="button" class="btn btn-primary">Login/Register</button></a>
+                    <a routerLink="todos"><button id="todosBtn" type="button" class="btn btn-success">Todos List</button></a>
+                  </div>
+              </div> -->
+
+            </li>  
+          </ul>
+        </div>
+      </div>
+
+
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>

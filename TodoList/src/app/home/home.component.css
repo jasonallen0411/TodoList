@@ -1,0 +1,48 @@
+nav{
+    background-image: url("https://cdn.pixabay.com/photo/2013/01/19/15/58/boards-75462_1280.jpg");
+}
+
+.homepageStuff{
+    margin: 0px auto;
+    text-align: center;
+}
+
+
+#homepageHeader{
+    font-family: "chalkduster";
+    text-align: center;
+    font-size: 100px;
+    color: white;
+}
+
+#homepageText{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: "helvetica";
+    text-align: center;
+    color: white;
+}
+
+#homepageText2{
+    margin-top: 20px;
+    font-family: "helvetica";
+    text-align: center;
+    color: white;
+}
+
+#homepageText3{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-family: "helvetica";
+    text-align: center;
+    color: white;
+}
+
+#loginBtn{
+    margin-right: 5px;
+}
+
+#todosBtn{
+    margin-left: 5px;
+}
+

@@ -1,0 +1,80 @@
+
+body{
+    background-color: rgb(0, 152, 179);
+    /* background-image: url("https://www.desktopbackground.org/download/1024x600/2013/12/11/683741_20-best-photos-of-scroll-backgrounds-template-blank-scroll-paper_1024x768_h.jpg");
+    background-image: url("https://cdn.pixabay.com/photo/2014/04/02/10/13/whiteboard-303145_1280.png");
+    background-size: contain;
+    height: 100vh;
+    background-attachment: fixed; */
+}
+
+.container{
+    margin: 0px auto;
+    text-align: center;
+}
+
+.row {
+    text-align: center;
+}
+
+
+.wrap {
+    display: block;
+    margin: 0px auto;
+}
+#title{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    /* margin-top: 30px; */
+    font-family: "chalkduster";
+    text-decoration: underline;
+}
+
+#todoInput{
+    margin-top: 20px;
+}
+
+#addTodoBtn{
+    margin-left: 20px;
+    color: rgb(0, 0, 0);
+    /* background-color: rgb(240, 185, 6); */
+}
+
+#todoCardText{
+    text-align: center;
+    margin-top: 85px;
+}
+
+#checkBox{
+    background-color: rgba(255, 255, 255, .5);
+    border: solid 1px black;
+}
+
+#editAndRemoveBtn{
+    margin-top: 20px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    font-size: 20px;
+    color: rgb(34, 6, 155);
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+
+.check{
+    color: green;
+}
+
+.card{
+    margin: 0px auto;
+    text-align: center;
+    background-color: rgba(92, 81, 243, 0);
+    color: rgb(32, 32, 32);
+    margin-top: 20px;
+
+}

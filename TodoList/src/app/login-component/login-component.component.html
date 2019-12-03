@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<h1 id="welcomeEmail" *ngIf="authguard.user | async">Welcome {{ (authguard.user | async)?.email }}! 
+  <button class="btn btn-danger" (click)="logout()" *ngIf="authguard.user | async">
+    Logout
+  </button>
+  <a routerLink="/todos">
+    <button id="todosBtn" type="button" class="btn btn-warning">Todos List</button>
+  </a>
+</h1>
+
+  <div class="container" *ngIf="!(authguard.user | async)">
+      <div class="row" *ngIf="message">
+        <div class="alert alert-light" role="alert">
+          {{ message }}
+        </div>
+      </div>
+  </div>
+
+<div class="container" *ngIf="!(authguard.user | async)">
+  <div class="row">
+      <form>
+          <div class="form-group">
+            <label id="emailLabel" for="exampleInputEmail1">Email Address</label>
+            <input [(ngModel)]="email" type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label id="passwordLabel" for="exampleInputPassword1">Password</label>
+            <input [(ngModel)]="password" type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <button class="btn btn-primary" (click)="register()">Register</button>
+          <button class="btn btn-light" (click)="login()">Log-in</button>
+        </form>
+  </div>
+</div>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+

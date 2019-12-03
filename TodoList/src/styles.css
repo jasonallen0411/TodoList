@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~font-awesome/css/font-awesome.css";
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body{
+    background-color: rgb(0, 152, 179);
+    /* background-image: url("https://www.desktopbackground.org/download/1024x600/2013/12/11/683741_20-best-photos-of-scroll-backgrounds-template-blank-scroll-paper_1024x768_h.jpg"); */
+    /* background-image: url("https://cdn.pixabay.com/photo/2014/04/02/10/13/whiteboard-303145_1280.png"); */
+    /* background-image: url("./assets/whiteboard2.png"); */
+    background-image: url("https://cdn.pixabay.com/photo/2015/09/03/05/52/green-background-920072_1280.jpg");
+    background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+}
